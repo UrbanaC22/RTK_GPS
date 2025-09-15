@@ -1,5 +1,5 @@
 # RTK_GPS
-### We will be using ROS2 along with the RTCM data.
+### We will be using ROS2 to exchange the corrected RTCM data.
 The setup for Jeton Xavier is similar to that of Raspberry PI and can be found [here](https://www.waveshare.com/wiki/LC29H(XX)_GPS/RTK_HAT).
 Although, some modifications are required to get things working in Xavier.
 
