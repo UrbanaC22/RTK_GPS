@@ -69,7 +69,7 @@ git clone https://github.com/wondergis/coordTransform.git
 colcon build
 source install/setup.bash
 ```
-### Run the nodes with the necessary attributed
+### Run the nodes with the necessary attributes
 ```
 ros2 run rtk_pkg nmea_node -u interplanetar.troubleshoot@gmail.com -p 1234 rtk2go.com 2101 boson
 ```
