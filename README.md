@@ -64,6 +64,10 @@ In setup.py:
         ],
     },
 ```
+If a virtual environment is being used, in setup.py add:
+```
+install_requires=['setuptools', 'pynmeagps'],
+```
 
 Paste the modified python scripts inside the rtk_pkg folder (_init_.py directory).
 
