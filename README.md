@@ -70,7 +70,7 @@ Paste the modified python scripts inside the rtk_pkg folder (_init_.py directory
 ### Additional dependency:
 Clone the following into the same directory as the python script as stated above:
 ```
-git clone https://github.com/wondergis/coordTransform.git
+git clone https://github.com/wandergis/coordTransform.git
 ```
 ### Build the workspace
 ```
