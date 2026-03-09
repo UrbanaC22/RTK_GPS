@@ -12,6 +12,15 @@ Although, some modifications are required to get things working in Xavier.
 pip3 install pynmeagps
 sudo apt install ros-foxy-nmea-msgs
 ```
+Alternative: Install pynmeagps using a virtual environment
+
+In the workspace directory, run the following commands:
+```
+python3 -m venv env
+source env/bin/activate # (or env\Scripts\activate on Windows)
+python3 -m pip install --upgrade pynmeagps
+```
+pipx install pynmeagps
 #### Skip the gpsd part entirely in the WaveashareWiki as we will use ROS2 instead.
 #### While downloading the source code, if any error appears, use:
 ```
