@@ -4,7 +4,7 @@ from pynmeagps import NMEAReader
 from nmea_msgs.msg import Sentence
 import rclpy
 from rclpy.node import Node
-from . import coordTransform_utils as transform 
+from .coordTransform_py import *
 import time
 
 #GPSDSocket creates a GPSD socket connection & request/retrieve GPSD output
