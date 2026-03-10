@@ -64,7 +64,7 @@ class NtripClient(Node):
                  fileOutput=False
                 ):
         super().__init__('nmea_publisher')
-        self.nmea_pub=self.create_publisher(Sentence, 'nmea_data', 10)
+        self.nmea_pub=self.create_publisher(Sentence, 'nmea_sentence', 10)
         self.buffer=buffer
         self.user=base64.b64encode(bytes(user,'utf-8')).decode("utf-8")
 #        print(self.user)
