@@ -78,6 +78,7 @@ git clone https://github.com/wandergis/coordTransform.git
 ```
 ### Build the workspace
 ```
+rm -rf build/ install/ log/
 colcon build
 source install/setup.bash
 ```
