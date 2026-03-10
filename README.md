@@ -89,6 +89,10 @@ In another terminal:
 ```
 ros2 run rtk_pkg conv_coord
 ```
+If pynmeagps has been install using a virtual environment, before running the scripts in each terminal,
+```
+export PYTHONPATH=$PYTHONPATH:/home/urbana/pynmeagps_env/lib/python3.12/site-packages
+```
 
 
 
