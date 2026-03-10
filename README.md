@@ -20,7 +20,8 @@ python3 -m venv env
 source env/bin/activate # (or env\Scripts\activate on Windows)
 python3 -m pip install --upgrade pynmeagps
 ```
-#### Skip the gpsd part entirely in the WaveashareWiki as we will use ROS2 instead.
+#### Skip the gpsd part entirely in the WaveshareWiki as we will use ROS2 instead.
+#### Also, skip the following instructions and jump directly into the "Build the workspace" section
 #### While downloading the source code, if any error appears, use:
 ```
 wget https://files.waveshare.com/wiki/LC29H\(XX\)-GPS-RTK-HAT/Lc29h_gps_rtk_hat_code.zip
@@ -78,7 +79,9 @@ git clone https://github.com/wandergis/coordTransform.git
 ```
 ### Build the workspace
 ```
-rm -rf build/ install/ log/
+mkdir rtk_ws
+cd rtk_ws
+git clone https://github.com/UrbanaC22/RTK_GPS
 colcon build
 source install/setup.bash
 ```
