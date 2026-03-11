@@ -11,7 +11,7 @@ import time
 class ConvertedCoordinate(Node):
     def __init__(self):
         super().__init__('nmea_subscriber')
-        self.nmea_sub=self.create_subscription(Sentence, 'nmea_data', self.callback, 10)
+        self.nmea_sub=self.create_subscription(Sentence, 'nmea_sentence', self.callback, 10)
 	#DataStream unpacks the streamed gpsd data into python dictionaries.
         gcj02_lng_lat = [0.0,0.0]
         bd09_lng_lat = [0.0,0.0]
