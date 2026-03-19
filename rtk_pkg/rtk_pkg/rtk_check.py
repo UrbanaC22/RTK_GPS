@@ -25,7 +25,6 @@ from optparse import OptionParser
 
 import serial
 from pynmeagps import NMEAReader
-import requests
 
 version=0.2
 useragent="NTRIP JCMBsoftPythonClient/%.1f" % version
@@ -75,7 +74,7 @@ class NtripClient(object):
         self.headerOutput=headerOutput
         self.maxConnectTime=maxConnectTime
         self.socket=None
-        self.stream = serial.Serial('/dev/ttyS0', 115200, timeout=3)
+        self.stream = serial.Serial('/dev/ttyUSB1', 115200, timeout=3)
         self.nmr = NMEAReader(self.stream)
 
         self.gps_file_path = gps_file_path
@@ -437,3 +436,4 @@ if __name__ == '__main__':
             f.close()
         if options.headerFile:
             h.close()
+
