@@ -34,7 +34,6 @@ import serial
 version=0.2
 useragent="NTRIP JCMBsoftPythonClient/%.1f" % version
 
-# reconnect parameter (fixed values):
 factor=2
 maxReconnect=1
 maxReconnectTime=1200
